@@ -1,0 +1,29 @@
+* {
+	font-family: "Comfortaa", sans-serif;
+	font-style: 20px;
+	text-decoration-color: white;
+}
+
+nav {
+	background-color: maroon;
+	text-align: center;
+	color: white;
+}
+
+#ochie_main {
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+#ochie_intro {
+	font-weight: bold;
+}
+
+form {
+	background-color: maroon;
+}
+
+#wd_profile {
+	background-color: #EF9A9A;
+}
