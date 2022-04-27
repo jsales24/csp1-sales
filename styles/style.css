@@ -37,5 +37,18 @@ form {
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 50vh;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
 
+#img_facebook {
+	content: url(https://www.facebook.com/ochie.sales/);
+}
+
+#img_instagram {
+	content: url(https://www.instagram.com/ouchiesales/);
+}
+
+#img_linkedin {
+	content: url(https://www.linkedin.com/in/ochiesales/);
 }
