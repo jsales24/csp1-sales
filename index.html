@@ -8,7 +8,7 @@
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
@@ -19,50 +19,51 @@
 </head>
 <body class="text-center">
 	<div class="container-fluid">
+		
 		<!-- Navbar component -->
-	    <nav class="navbar navbar-expand-lg">
-	      <div class="collapse navbar-collapse justify-content-center text-white" id="navbarNav" >
-	        <ul class="navbar-nav">
-	          <li class="nav-item">
-	            <a class="nav-link" id="profile" href="#">Profile</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" id="about_me" href="#">About Me</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" id="gallery" href="#">Gallery</a>
-	          </li>
-	          <li class="nav-item">
-	            <a class="nav-link" id="contact_me" href="#">Contact Me</a>
-	          </li>
-	        </ul>
-	      </div>
-	    </nav>
+	 
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand " href="#">Ochie Sales</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
+  			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div class="navbar-nav ml-auto">
+     	 			<a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+      			<a class="nav-link" href="#">About Me</a>
+      			<a class="nav-link" href="#">Gallery</a>
+      			<a class="nav-link" href="#">Contact Me</a>
+    			</div>
+    		</div>
+  		</div>	
+		</nav>
+	
 
-	    <div class="my-3 min-vh-100">
-            
-            <img class="p-2 rounded-circle" id="wd_profile" src="./images/ochie2.jpg" width="250">
-
-            <h1>Jose Antonio Sales</h1>
+	    <div class="min-vh-100 pt-5 p-md-5">
+          <div id="wd_profile">  
+            <img class="p-2 rounded-circle border bg-white m-3" src="./images/ochie2.jpg" width="250">
+            <div class="bg-white">
+            <h1 class="mt-4 pt-2">Jose Antonio Sales</h1>
             <h3>Web Developer</h3>
 
-            <div class="row">
+            <div class="row m-3 text ">
               <div class="offset-md-2 col-md-8">
-                <p>
+                <p class="text-justify">
                   I was born on the 7th of July, 1992 at Anchorage, Alaska but I grew up in the Philippines. I currently reside at Don Antonio, Brgy. Holy Spirit. I graduated from the University of the Philippines with a Bachelors Degree in Sports Science and I played for the UP Baseball Team and competed in the UAAP.
                 </p>
               </div>
             </div>
+           </div>
 
 		<h3 class="py-4 bg-dark text-light">About Me</h3>
 
-	    <!-- Other Projects Start -->
-	    <div class="text-dark row">
+	    <!-- About Me -->
+	    <div class="text-dark row" id="about_me">
 
 	    <!-- Sports -->
 	    <div class="col-sm-12 col-md-3 col-lg-3">
 	        <h5 class="py-2">Sports</h5>
-	        <img src="./images/ochie.jpg" class="img-fluid py-2">
+	        <img src="./images/ochie.jpg" class="img-fluid py-2 rounded">
 	        <p class="text-justify py-1">I love playing sports. I play basketball, football, and baseball. One sport I couldn't get the courage to learn is swimming.</p>
 	    </div>
 	    <!-- Sports End -->
@@ -70,7 +71,7 @@
 	    <!-- Travel -->
 	    <div class="col-sm-12 col-md-3 col-lg-3">
 	        <h5 class="py-2">Travel</h5>
-	        <img src="./images/travel.jpg" class="img-fluid py-2">
+	        <img src="./images/travel.jpg" class="img-fluid py-2 rounded">
 	        <p class="text-justify py-1">I love to travel even though I have only been to a few countries like Hongkong, Taiwan, Australia and the US.</p>
 	    </div>
 	    <!-- Travel End -->
@@ -78,7 +79,7 @@
 	    <!-- Gaming -->
 	    <div class="col-sm-12 col-md-3 col-lg-3">
 	        <h5 class="py-2">Gaming</h5>
-	        <img src="./images/ragnarok.jpg" class="img-fluid py-2">
+	        <img src="./images/ragnarok.jpg" class="img-fluid py-2 rounded">
 	        <p class="text-justify py-1">During my free-time, I like playing games such as Ragnarok and Mobile Legends. I used to play Dota 2 with my friends.</p>
 	    </div>
 	    <!-- Gaming End -->
@@ -86,17 +87,21 @@
 	    <!-- Anime -->
 	    <div class="col-sm-12 col-md-3 col-lg-3">
 	        <h5 class="py-2">Anime</h5>
-	        <img src="./images/anime.jpg" class="img-fluid py-2">
+	        <img src="./images/anime.jpg" class="img-fluid py-2 rounded">
 	        <p class="text-justify py-1">I'm also into anime specifically One Piece, cause I grew up looking forward to every episode and manga. Up until today, the anime still isn't close to finishing.</p>
 	    </div>
 	    <!-- Gaming End -->
 
+	    <!-- About Me End -->
+
+
+	    <!-- Gallery Start -->
 	    <div class="container-fluid text-center">
-	    <h3 class="py-4 bg-dark text-light">Gallery</h3>
+	    <h3 class="py-4 bg-dark text-light" id="gallery">Gallery</h3>
 
 	    <!-- Carousel Section Start -->
-            <div class="row d-none d-md-block my-md-5 text-dark">
-              <div class="offset-xl-3 col-xl-6 col-sm-6 col-md-6 col-lg-6">
+            <div class="row d-md-block d-sm-block my-md-5 my-sm-5">
+              <div class="offset-xl-3 offset-lg-3 offset-md-3 offset-sm-3 col-xl-6 col-sm-6 col-md-6 col-lg-6">
                 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
                     <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
@@ -154,14 +159,18 @@
                 </div>
               </div>
             </div>
-            <!-- Carousel Section end -->
+      <!-- Carousel Section end -->
 
+      <!-- Gallery End -->
+
+						<!-- Contact Us -->
 						<div>
-							<h3 class="py-4 bg-dark text-light">Contact Me</h3>
+							<h3 class="py-4 bg-dark text-light" id="contact_us">Contact Us</h3>
               <div class="text-light min-vh-100 p-3 p-md-5">
                   <div class="d-flex justify-content-center">
+                    
                     <form class="p-3 col-xl-4 col-md-8 col-sm-12">
-                      <div class="form-group">
+                    	<div>
                         <label for="exampleInputName1">Name</label>
                         <input type="text" class="form-control " id="exampleInputName" aria-describedby="namehelp">
                         <small id="namehelp" class="form-text text-muted"></small>
@@ -202,8 +211,23 @@
                         </div>
                       </div>
                     </form>
+                  </div>
               </div>
-              <!-- Other projects section end -->
+
+              <div>
+              	<div class="my-4 text-dark">
+                    	<img width="100px" src="./images/facebook.png">
+                			<a href="https://www.facebook.com/ochie.sales/">Facebook</a>
+                		
+                    	<img width="100px" src="./images/instagram.png">
+                			<a href="https://www.instagram.com/ouchiesales/">Instagram</a>
+                			
+                    	<img width="100px" src="./images/linkedin.png">
+                			<a href="https://www.linkedin.com/in/ochiesales/">LinkedIn</a>
+              	</div>
+              </div>
+
+              <!-- Contact Me End -->
 
 
 

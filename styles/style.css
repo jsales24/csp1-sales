@@ -1,7 +1,6 @@
 * {
-	font-family: "Comfortaa", sans-serif;
+	font-family: "Lobster", sans-serif;
 	font-style: 20px;
-	text-decoration-color: white;
 }
 
 nav {
@@ -21,9 +20,18 @@ nav {
 }
 
 form {
-	background-color: maroon;
+	background-color: black;
+}
+
+* {
+	margin: 0;
+	padding: 0;
 }
 
 #wd_profile {
-	background-color: #EF9A9A;
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vh;
+
 }
