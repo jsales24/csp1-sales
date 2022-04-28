@@ -15,6 +15,7 @@ form {
 
 body {
 	height: 100%;
+	background-color: beige;
 }
 
 #wd_profile {
@@ -28,17 +29,6 @@ body {
 	background-attachment: fixed;
 }
 
-.map-responsiveness iframe {
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-	position: absolute;
-}
-
-.map-responsive {
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
+.container {
+	height: ;
 }
